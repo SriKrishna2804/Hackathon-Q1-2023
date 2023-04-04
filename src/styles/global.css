@@ -133,3 +133,10 @@ img {
   max-width: 100%;
   display: block;
 }
+
+@font-face {
+  font-family: "GillSans";
+  src: url('../../fonts/GillSansStdBold/GillSansStd-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
