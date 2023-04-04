@@ -105,3 +105,10 @@ a {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: "GillSans";
+  src: url('../../fonts/GillSansStdBold/GillSansStd-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
