@@ -22,38 +22,3 @@
   display: flex;
   flex-direction: row;
 }
-
-.imageTitle {
-  font-family: 'GillSans', Arial, sans-serif;
-  font-weight: bold;
-  color: #FFFFFF;
-  font-size: 28px;
-}
-
-.divCenter {
-  position: relative;
-  text-align: center;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.leftCentered {
-  position: absolute;
-  top: 50%;
-  left: 24px;
-}
-
-.btn {
-  border: none; /* Remove borders */
-  color: white; /* Add a text color */
-  padding: 14px 28px; /* Add some padding */
-  cursor: pointer; /* Add a pointer cursor on mouse-over */
-}
-
-.warning {background-color: #ff9800;} /* Orange */
-.warning:hover {background: #e68a00;}

@@ -24,6 +24,9 @@ export default function TopNavBar() {
         <Link href="/client/floorplan-overview" className={styles.link}>
           FLOORPLANS
         </Link>
+        <Link href="/client/webcam-overview" className={styles.link}>
+          WEBCAMS
+        </Link>
       </Box>
     </Grid>
   );

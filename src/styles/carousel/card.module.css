@@ -1,0 +1,41 @@
+.imageTitle {
+  font-family: "GillSans", Arial, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.divCenter {
+  position: relative;
+  text-align: center;
+}
+
+.leftCentered {
+  position: absolute;
+  top: 20%;
+  left: 40px;
+  width: 60%;
+  text-align: left;
+}
+
+.link {
+  width: auto;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  width: fit-content;
+}
+
+.warning {
+  background-color: #e95c13;
+} /* Orange */
+.warning:hover {
+  background: #cb4f0e;
+}

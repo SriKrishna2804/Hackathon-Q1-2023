@@ -6,6 +6,7 @@ import LeftSidebar from "mdsreact/components/login/left-sidebar";
 import Layout from "mdsreact/components/layout";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Card from "mdsreact/components/carousel/card";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -75,50 +76,14 @@ export default function Home() {
         <Grid item xs={9} display={{ xs: "none", lg: "block" }}>
           <Container className={styles.container}>
             <Carousel autoPlay showThumbs={false} infiniteLoop>
-              <div className={styles.divCenter}>
-                <img alt={photos[0].title} src={photos[0].url} />
-                <div className={styles.leftCentered}>
-                  <h3 className={styles.imageTitle}>{photos[0].title}</h3>
-                  <h4 className={styles.imageTitle}>{photos[0].subTitle}</h4>
-                  <a
-                    target="_blank"
-                    href={photos[0].link}
-                    rel="noopener noreferrer"
-                  >
-                    <div className={`${styles.btn} ${styles.warning}`} />
-                  </a>
-                  {/* <p>{photos[0].link}</p> */}
-                  {/* <Link href={photos[0].link} className={`${styles.btn} ${styles.warning}`} passHref> */}
-                  {/* <a target='_blank' rel="noopener">Learn More</a> */}
-                  {/* Learn More
-              </Link> */}
-                  {/* <button className={`${styles.btn} ${styles.warning}`}  onClick={() => router.push(photos[0].link)}>Learn More</button> */}
-                </div>
-              </div>
-              <div>
-                <img alt={photos[1].title} src={photos[1].url} />
-                <p className="legend">Legend 2</p>
-              </div>
-              <div>
-                <img alt={photos[2].title} src={photos[2].url} />
-                <p className="legend">Legend 2</p>
-              </div>
-              <div>
-                <img alt={photos[3].title} src={photos[3].url} />
-                <p className="legend">Legend 2</p>
-              </div>
-              <div>
-                <img alt={photos[4].title} src={photos[4].url} />
-                <p className="legend">Legend 2</p>
-              </div>
-              <div>
-                <img alt={photos[5].title} src={photos[5].url} />
-                <p className="legend">Legend 2</p>
-              </div>
-              <div>
-                <img alt={photos[6].title} src={photos[6].url} />
-                <p className="legend">Legend 2</p>
-              </div>
+              {photos.map((photo) => (
+                <Card
+                  title={photo.title}
+                  url={photo.url}
+                  subTitle={photo.subTitle}
+                  link={photo.link}
+                />
+              ))}
             </Carousel>
           </Container>
         </Grid>
