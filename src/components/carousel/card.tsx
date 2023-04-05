@@ -1,4 +1,4 @@
-import { Grid, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import styles from "../../styles/carousel/card.module.css";
 
 export default function Card({

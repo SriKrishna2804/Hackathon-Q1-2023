@@ -91,8 +91,8 @@ export default function Home() {
         <Grid item xs={9} display={{ xs: "none", lg: "block" }}>
           <Container className={styles.container}>
             <Carousel autoPlay showThumbs={false} showStatus={false} infiniteLoop>
-              {photos.map((photo) => (
-                <Card
+              {photos.map((photo, index) => (
+                <Card key={index}
                   title={photo.title}
                   url={photo.url}
                   subTitle={photo.subTitle}

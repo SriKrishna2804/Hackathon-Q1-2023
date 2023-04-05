@@ -11,8 +11,8 @@ export default function FloorplansGroup({ floorplans }) {
   });
   return (
     <Box>
-      {categories.map((category) => (
-        <Box
+      {categories.map((category, index) => (
+        <Box key={index}
           className={styles.group}
           sx={{ display: "flex", textAlign: "center", flexDirection: "column" }}
         >
@@ -24,8 +24,9 @@ export default function FloorplansGroup({ floorplans }) {
               if (floorplan.ProjectShootTypeLabel === category) {
                 return (
                   <FloorplanCard
-                    name={floorplan.FloorplanDescription}
-                    url={floorplan.ImageURL}
+                    key={floorplan?.FloorplanUID}
+                    name={floorplan?.FloorplanDescription}
+                    url={floorplan?.ImageURL}
                   />
                 );
               }

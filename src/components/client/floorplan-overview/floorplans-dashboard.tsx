@@ -5,7 +5,7 @@ import floorplans from "mdsreact/data/floorplans.json";
 
 export default function FloorplansDashboard() {
   return (
-    <Grid xs={10}>
+    <Grid item xs={10}>
       <Box className={styles.container}>
         <FloorplansGroup floorplans={floorplans} />
       </Box>

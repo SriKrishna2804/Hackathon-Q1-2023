@@ -12,6 +12,13 @@
     border-right: 1px solid #424242;
     font-weight: bold;
     font-size: 14px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+}
+
+.active {
+    background-color: #e95c13;
 }
 
 .logo {

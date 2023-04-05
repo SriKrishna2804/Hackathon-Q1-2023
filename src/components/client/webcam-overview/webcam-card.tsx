@@ -16,7 +16,7 @@ import {
               component="img"
               height="180"
               image={url}
-              alt="Floorplan"
+              alt="Webcam"
               className={styles.cardImg}
             />
             <CardContent>

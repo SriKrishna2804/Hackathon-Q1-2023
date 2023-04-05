@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 
 export default function LeftSideBar() {
   return (
-    <Grid xs={2}>
+    <Grid item xs={2}>
         Sidebar
     </Grid>
   );
