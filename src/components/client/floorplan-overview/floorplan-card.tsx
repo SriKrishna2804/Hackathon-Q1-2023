@@ -8,25 +8,23 @@ import {
 } from "@mui/material";
 import styles from "mdsreact/styles/client/floorplan-overview/floorplan-card.module.css";
 
-export default function FloorplanCard() {
+export default function FloorplanCard({ name, url }) {
   return (
-    <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" }}>
       <Card className={styles.card}>
         <CardActionArea>
           <CardMedia
             component="img"
             height="180"
-            image="/images/floorplan.png"
+            image={url}
             alt="Floorplan"
             className={styles.cardImg}
           />
           <CardContent>
             <Typography gutterBottom variant="body2" component="div" className={styles.cardHeading}>
-              Office Shell
+              {name}
             </Typography>
           </CardContent>
         </CardActionArea>
       </Card>
-    </Box>
   );
 }
