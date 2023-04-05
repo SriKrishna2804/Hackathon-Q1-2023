@@ -1,7 +1,14 @@
 .imageTitle {
   font-family: "GillSans", Arial, sans-serif;
   font-weight: bold;
+}
+
+.imgTextWhiteColor {
   color: #ffffff;
+}
+
+.imgTextBlackColor {
+  color: #000000;
 }
 
 .divCenter {
